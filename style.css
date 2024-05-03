@@ -1,0 +1,59 @@
+body {
+    background-image: url("assets/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #96d5fe;
+}
+
+#container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+#btn {
+    background-color: rgba(65, 196, 241, 0.7);
+    color: #11468F;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px #fff;
+    padding: 15px 30px;
+    margin-bottom: 300px;
+    border: 2px solid #11468F;
+    border-radius: 10px;
+    font-family: 'Bitter', serif;
+    cursor: pointer;
+    position: fixed;
+}
+
+#btn:hover {
+    background-color: rgba(65, 196, 241, 1);
+    text-shadow: 1px 1px 2px #000000;
+    transition: 0.6s all ease-in;
+}
+
+#par {
+    display: none;
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+    color: #11468F;
+    font-weight: bold;
+    background-color: rgba(242, 242, 242, 0.7);
+    margin-top: 100px;
+    padding: 20px;
+    border: 2px solid #11468F;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    z-index: 30;
+}
+
+@media all and (max-width: 540px) {
+    #btn, #par {
+        font-size: 20px;
+        width: 80%;
+    }
+}
